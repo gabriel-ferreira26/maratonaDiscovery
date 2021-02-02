@@ -28,7 +28,7 @@
                     <span>Entradas</span>
                     <img src="./assets/income.svg" alt="Imagem de entradas">
                 </h3>
-                <p>R$ 5000</p>
+                <p id="incomeDisplay"></p>
             </div>
             <div class="card">
                 <h3>
@@ -38,7 +38,7 @@
                     <img src="./assets/expense.svg" alt="Imagem de Saidas">
 
                 </h3>
-                <p>R$ 2000</p>
+                <p id="expenseDisplay"></p></p>
             </div>
             <div class="card total">
                 <h3>
@@ -46,7 +46,7 @@
                     <img src="./assets/total.svg" alt="Imagem de total">
                     
                 </h3>
-                <p>R$ 3000</p>
+                <p id="totalDisplay"></p>
 
             </div>
         </section>
@@ -67,28 +67,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <td class="description">Internet</td>
-                    <td class="expense"> - R$ 500</td>
-                    <td class="date">23/01/2021</td>
-                    <td>
-                        <img src="./assets/minus.svg" alt="remover trasaction" >
-                    </td>
-                </tbody>
-                <tbody>
-                    <td class="description">Luz</td>
-                    <td class="income"> - R$ 500</td>
-                    <td class="date">23/01/2021</td>
-                    <td>
-                        <img src="./assets/minus.svg" alt="remover trasaction" >
-                    </td>
-                </tbody>
-                <tbody>
-                    <td class="description">Criação web</td>
-                    <td class="expense"> + R$ 5000</td>
-                    <td class="date">23/01/2021</td>
-                    <td>
-                        <img src="./assets/minus.svg" alt="remover trasaction" >
-                    </td>
+                    
                 </tbody>
 
             </table>
@@ -161,27 +140,8 @@
         </div>
     </div>
 
-    <script>
-        const Modal = {
-            open(){
-                //Abri modal
-                //Adicionar a classe active ao modal
-                document
-                    .querySelector('.modal-overlay')
-                    .classList
-                    .add('active')
-
-            },
-
-            close(){
-                //fechar modal
-                //Retira a class active do modal
-                document
-                    .querySelector('.modal-overlay')
-                    .classList
-                    .remove('active')
-            }
-        }
+    <script src="./scripts.js">
+        
     </script>
 
     <footer>
